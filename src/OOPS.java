@@ -124,4 +124,33 @@ public class OOPS {
         }
     }
 
+    //interfaces
+    interface Payment{
+        void pay();
+        void credit();
+    }
+
+    class CreditCard implements Payment {
+        @Override
+        public void pay() {
+            //implementation will be done here
+        }
+        @Override
+        public void credit(){
+
+        }
+    }
+    class OnlinePayment implements Payment{
+
+        @Override
+        public void pay() {
+
+        }
+
+        @Override
+        public void credit() {
+    //any functionality of the online payment for credit
+        }
+    }
+
 }
